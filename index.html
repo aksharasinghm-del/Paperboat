@@ -129,6 +129,16 @@ footer{padding:60px 0 50px}
 @media (max-width:560px){ .g4{grid-template-columns:1fr} .kpi .v{font-size:1.8rem} .page{padding-left:40px} .card{min-width:0} }
 .card,.page{min-width:0; overflow-wrap:anywhere}
 @media (prefers-reduced-motion:reduce){ .boat,.drops i{animation:none!important} .boat{left:30%} }
+/* campaign kit */
+.ck-g{margin-top:2.4rem}
+.ck-gh{display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 16px; border-top:1px solid var(--line); padding-top:14px}
+.ck-gh b{font-size:1.05rem}
+.ck-gh span{display:flex; gap:14px; font-size:.9rem}
+.ck-gh a{font-weight:700}
+.ck-strip{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding:14px 2px 12px}
+.ck-strip figure{margin:0; flex:none; scroll-snap-align:start}
+.ck-strip img{display:block; height:min(360px,62vw); width:auto; max-width:none; border-radius:12px; border:1px solid var(--line); box-shadow:0 16px 30px -20px rgba(0,0,0,.45)}
+.ck-strip figcaption{font-size:.82rem; color:var(--muted); margin-top:8px; max-width:280px}
 </style>
 </head>
 <body>
@@ -410,6 +420,49 @@ footer{padding:60px 0 50px}
   document.querySelectorAll('.shot[data-img]').forEach(function(s){ var im=new Image(); im.alt=s.getAttribute('data-alt'); im.onload=function(){ s.innerHTML=''; s.appendChild(im); }; im.src=s.getAttribute('data-img'); });
 })();
 </script>
+
+<section id="campaign-kit">
+    <div class="wrap">
+      <div class="page"><span class="tab">Campaign kit</span>
+        <p class="chap">more memories, ready to post</p>
+        <h2>The campaign kit.</h2>
+      <p class="lede">Four kinds of assets I designed for this strategy, including new variations of the post series above: an Instagram carousel, Stories, widescreen pieces and a print piece. Scroll each row, or open the originals in Canva.</p>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Instagram carousel</b><span><a href="https://www.canva.com/d/SeZ3dV8Dtnf7b7m" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/carousel.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Instagram carousel, scroll sideways">
+          <figure><img src="canva-kit/carousel/01.jpg" alt="Instagram carousel, Every generation had a paper boat" loading="lazy"><figcaption>Every generation had a paper boat</figcaption></figure>
+          <figure><img src="canva-kit/carousel/02.jpg" alt="Instagram carousel, Memory Mondays #02" loading="lazy"><figcaption>Memory Mondays #02</figcaption></figure>
+          <figure><img src="canva-kit/carousel/03.jpg" alt="Instagram carousel, Memory Mondays #03" loading="lazy"><figcaption>Memory Mondays #03</figcaption></figure>
+          <figure><img src="canva-kit/carousel/04.jpg" alt="Instagram carousel, #MyPaperBoatMemory of the week" loading="lazy"><figcaption>#MyPaperBoatMemory of the week</figcaption></figure>
+          <figure><img src="canva-kit/carousel/05.jpg" alt="Instagram carousel, Flavour × moment matrix" loading="lazy"><figcaption>Flavour × moment matrix</figcaption></figure>
+          <figure><img src="canva-kit/carousel/06.jpg" alt="Instagram carousel, 12-month targets" loading="lazy"><figcaption>12-month targets</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Rain-trigger Stories</b><span><a href="https://www.canva.com/d/WI3DfcUKgjualcK" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/stories.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Rain-trigger Stories, scroll sideways">
+          <figure><img src="canva-kit/stories/01.jpg" alt="Rain-trigger Stories, Live in Delhi" loading="lazy"><figcaption>Live in Delhi</figcaption></figure>
+          <figure><img src="canva-kit/stories/02.jpg" alt="Rain-trigger Stories, Live in Bengaluru" loading="lazy"><figcaption>Live in Bengaluru</figcaption></figure>
+          <figure><img src="canva-kit/stories/03.jpg" alt="Rain-trigger Stories, Live in Kolkata" loading="lazy"><figcaption>Live in Kolkata</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Out-of-home and strategy</b><span><a href="https://www.canva.com/d/LwMW6olZStF2NaW" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/widescreen.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Out-of-home and strategy, scroll sideways">
+          <figure><img src="canva-kit/widescreen/01.jpg" alt="Out-of-home and strategy, Mumbai bus shelter, in the rain" loading="lazy"><figcaption>Mumbai bus shelter, in the rain</figcaption></figure>
+          <figure><img src="canva-kit/widescreen/02.jpg" alt="Out-of-home and strategy, The memory loop" loading="lazy"><figcaption>The memory loop</figcaption></figure>
+        </div>
+      </div>
+      <div class="ck-g">
+        <div class="ck-gh"><b>Print: fold-a-memory sheet</b><span><a href="https://www.canva.com/d/wIQYFVFXWGAvikX" target="_blank" rel="noopener">View in Canva ↗</a><a href="canva-kit/print.pdf" download>PDF</a></span></div>
+        <div class="ck-strip" tabindex="0" aria-label="Print: fold-a-memory sheet, scroll sideways">
+          <figure><img src="canva-kit/print/01.jpg" alt="Print: fold-a-memory sheet, Fold-a-memory sheet, inside every multipack" loading="lazy"><figcaption>Fold-a-memory sheet, inside every multipack</figcaption></figure>
+        </div>
+      </div>
+      <p style="margin-top:2rem"><a href="https://www.canva.com/d/84mWTID-NMi4Fmd" target="_blank" rel="noopener">See all my work ↗</a></p>
+      </div>
+    </div>
+  </section>
 
 <footer>
   <div class="wrap">
